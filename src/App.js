@@ -24,13 +24,13 @@ import SalesOrders from './Pages/Sales/SalesOrders';
 import SalesReturns from './Pages/Sales/SalesReturns';
 import Shipments from './Pages/Sales/Shipments';
 import Documents from './Pages/Documents';
-
+// import Chatgpttest from './component/chatgpttest';
 
 function App() {
   return (
     <>
     <Router>
-     <Routes>
+     <Routes>   
        <Route path="/" element={<Home/>}/>
        <Route path="/dashboard" element={<Dashboard/>} />
        <Route path="/gettingstarted" element={<Gettingstarted/>} />
@@ -63,6 +63,7 @@ function App() {
        <Route path="/bills" element={<Bills/>} />
        <Route path="/paymentsmade" elements={<PaymentsMade/>} />
        <Route path="/vendorcredits" elements={<VendorCredits/>} />
+       {/* <Route path="/chatgpttest" element={<Chatgpttest/>} /> */}
     </Routes>
     </Router>
     </>

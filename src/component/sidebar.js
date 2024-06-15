@@ -49,7 +49,7 @@ const Sidebar = () => {
             <span className="icon">
               <GrUserSettings />
             </span>
-             <div class="btn-group d-none d-sm-inline">
+             <div class="btn-group">
                     <buttonbtn-group
                         class="btn dropdown-toggle"
                         type="button"

@@ -29,7 +29,6 @@ function Reports() {
                   <div className='head'>
                     <Header/> 
                   </div>
-
                   <div className="report">
                     <div className="reporthead">
                        <h3>Reports</h3>
@@ -176,7 +175,7 @@ function Reports() {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="row four">
+                  <div className="row four">
                     <div className="col-lg-4">
                         <h3><span><LuActivitySquare className="heading"/></span>Activity</h3>
                      <div className="linktext">
@@ -188,9 +187,7 @@ function Reports() {
                        </div>
                      </div>  
                     </div>
-                   </div> */}
-                    
-                     
+                  </div>
                  </div>
             </div>
     </div>
@@ -217,7 +214,6 @@ overflow-x: hidden;
 }
 .report {
   margin-top: 65px;
-  
 }
 .report h3{
   margin-top: 10px;
@@ -262,7 +258,7 @@ li{
 .col-lg-10::after{
   content: ''; 
   position: absolute; 
-  bottom: 885px; 
+  bottom: 980px; 
   left: 0; 
   width: 100%; 
   height: 1px; 
@@ -293,6 +289,4 @@ a{
 .four .col-lg-4{
     padding-left: 70px;
 }
-}
-
 `;

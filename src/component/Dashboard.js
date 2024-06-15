@@ -155,7 +155,7 @@ function Dashboard() {
       </thead>
       <tbody>
       {data.map((item) => (
-          <tr key={item.channel}>
+          <tr key={item.id}>
             <td>{item.channel}</td>
             <td>{item.draft}</td>
             <td>{item.confirmed}</td>
@@ -580,3 +580,5 @@ dashboard{
     margin-left: 0;
 }
 `;
+
+3
