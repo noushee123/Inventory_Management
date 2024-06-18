@@ -13,7 +13,7 @@ import { useLocation } from "react-router-dom";
 
 
 
-const Sidebar = () => {
+const  Sidebar = () => {
   const location = useLocation()
     const getPath = (path)=>{
       return location.pathname === path ? "active" : "";
@@ -22,17 +22,16 @@ const Sidebar = () => {
   return (
     <div className="Sidebar">
       <SideStyle>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-
+        <div className="">
+          <div className="">
+            <div className="">
          <ul className="list">
           <li>
             <div className="inventory">
               <span className="icon">
                 <MdInventory />
               </span >
-              <div class="d-none d-sm-inline">
+              <div>
               Inventory
               </div>
             </div>
@@ -41,7 +40,7 @@ const Sidebar = () => {
             <span className="icon">
               <IoHomeOutline />
             </span>
-            <Link className="linkyone d-none d-sm-inline" to="/">
+            <Link className="linkyone" to="/">
               Home
             </Link>
           </li>
@@ -129,7 +128,7 @@ const Sidebar = () => {
             <span className="icon">
             <BsGearWide />
             </span>
-            <Link className="linkyone d-none d-sm-inline" to="/integration">
+            <Link className="linkyone" to="/integration">
               Integration
             </Link>
           </li>
@@ -137,7 +136,7 @@ const Sidebar = () => {
             <span className="icon">
             <BiSolidReport />
             </span>
-            <Link className="linkyone d-none d-sm-inline" to="/reports">
+            <Link className="linkyone" to="/reports">
                 Reports
             </Link>
           </li>
@@ -145,7 +144,7 @@ const Sidebar = () => {
             <span className="icon">
             <HiMiniClipboardDocument />
             </span>
-            <Link className="linkyone d-none d-sm-inline" to="/documents">
+            <Link className="linkyone" to="/documents">
                 Documents
             </Link>
           </li>
@@ -165,12 +164,9 @@ const SideStyle = styled.div`
 
   height: 100%;
   background-color: #4b0082; //rgba(140, 144, 169, 1)
-  margin-top: -30px;
   
  .list {
-    list-style: none;
-     margin-top: 20px;
-    
+     list-style: none;
   }
   .inventory {
     padding-top: 15px;
@@ -189,7 +185,6 @@ const SideStyle = styled.div`
     height: 45px;
     font-size: 25px;
     display: flex;
-    margin-top: 40px;
     margin-bottom: 50px;
     margin-right: 10px;
     color: white;
@@ -233,4 +228,27 @@ const SideStyle = styled.div`
      background-color: #00BFFF ;  
      border-radius: 10px;
   }
+  @media (max-width: 768px){
+    
+       li {
+      width: 150px;
+      height: 35px;
+      font-size: 10px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .inventory {
+      font-size: 20px;
+      gap: 15px;
+    }
+
+    .btn-group {
+      width: 100px;
+      height: 25px;
+      margin-top: -5px;
+      font-size: 10px;
+      }  
+  }
 `;
+

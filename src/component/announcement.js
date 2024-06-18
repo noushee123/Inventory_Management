@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Sidebar from './sidebar';
 import Header from './header';
 import Dashboardhead from './Dashboardhead';
-import image from '../Pages/images/announcement.png';
+import announce from '../Pages/images/announcement.png';
 
 function Announcement() {
   return (
@@ -24,7 +24,7 @@ function Announcement() {
                   <Dashboardhead/>
                   </div>
                  <div className='announce' style= {{ backgroundColor: 'rgba(249, 248, 248, 1)'}}>
-                 <img src={image} alt="Announcement image" />
+                 <img src={announce} alt="Announcement"/>
                  <h1>Never miss an announcement</h1>
                  </div>
                 </div>

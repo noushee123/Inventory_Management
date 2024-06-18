@@ -25,6 +25,7 @@ import SalesReturns from './Pages/Sales/SalesReturns';
 import Shipments from './Pages/Sales/Shipments';
 import Documents from './Pages/Documents';
 // import Chatgpttest from './component/chatgpttest';
+import Sidebar from './component/sidebar';
 
 function App() {
   return (
